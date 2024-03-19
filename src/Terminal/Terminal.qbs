@@ -7,6 +7,7 @@ Product
     consoleApplication: true
 
     Depends{name: "cpp"}
+    Depends { name: "Commands"}
     Depends{name: "PProto"}
     Depends{name: "RapidJson"}
     Depends{name: "SharedLib"}
@@ -19,6 +20,8 @@ Product
     cpp.systemIncludePaths: Qt.core.cpp.includePaths
 
     files:[
+        "application.cpp",
+        "application.h",
         "main.cpp",
     ]
 }

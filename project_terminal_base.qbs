@@ -8,6 +8,7 @@ ProjectBase
         "src/yaml/yaml.qbs",
         "src/Terminal/Terminal.qbs",
         "src/pproto/pproto.qbs",
-        "src/rapidjson/rapidjson.qbs"
+        "src/rapidjson/rapidjson.qbs",
+        "src/commands/commands.qbs"
     ]
 }
