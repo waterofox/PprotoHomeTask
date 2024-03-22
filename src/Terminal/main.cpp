@@ -18,9 +18,11 @@
 
 int loadApplication();
 
-int main()
+int main(int argc, char* argv[])
 {
     loadApplication();
+    Application obj{argc,argv};
+    obj.init();
     return 0;
 }
 int loadApplication()
