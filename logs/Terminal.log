@@ -1,0 +1,80 @@
+22.03.2024 19:27:40 ERROR   LWP13804 [config.cpp:440 LogConfig] Logger configuration YAML error. Detail: yaml-cpp: error at line 11, column 2: illegal block entry. Config file: C:/User/SnifflyFox/PprotoTask/config/Terminal.logger.config
+22.03.2024 19:27:40 INFO    LWP13804 [config.cpp:470 LogConfig] ---
+22.03.2024 19:27:40 INFO    LWP13804 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:27:40 INFO    LWP13804 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:27:40 INFO    LWP13804 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:27:40 INFO    LWP13804 [config.cpp:602 LogConfig] ...
+22.03.2024 19:27:40 INFO    LWP13804 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:29:18 ERROR   LWP11336 [config.cpp:440 LogConfig] Logger configuration YAML error. Detail: yaml-cpp: error at line 26, column 1: illegal tab when looking for indentation. Config file: C:/User/SnifflyFox/PprotoTask/config/Terminal.logger.config
+22.03.2024 19:29:18 INFO    LWP11336 [config.cpp:470 LogConfig] ---
+22.03.2024 19:29:18 INFO    LWP11336 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:29:18 INFO    LWP11336 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:29:18 INFO    LWP11336 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:29:18 INFO    LWP11336 [config.cpp:602 LogConfig] ...
+22.03.2024 19:29:18 INFO    LWP11336 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:29:44 ERROR   LWP10788 [config.cpp:440 LogConfig] Logger configuration YAML error. Detail: yaml-cpp: error at line 26, column 1: illegal tab when looking for indentation. Config file: C:/User/SnifflyFox/PprotoTask/config/Terminal.logger.config
+22.03.2024 19:29:44 INFO    LWP10788 [config.cpp:470 LogConfig] ---
+22.03.2024 19:29:44 INFO    LWP10788 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:29:44 INFO    LWP10788 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:29:44 INFO    LWP10788 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:29:44 INFO    LWP10788 [config.cpp:602 LogConfig] ...
+22.03.2024 19:29:44 INFO    LWP10788 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:30:13 ERROR   LWP2512 [config.cpp:440 LogConfig] Logger configuration YAML error. Detail: yaml-cpp: error at line 26, column 1: end of map not found. Config file: C:/User/SnifflyFox/PprotoTask/config/Terminal.logger.config
+22.03.2024 19:30:13 INFO    LWP2512 [config.cpp:470 LogConfig] ---
+22.03.2024 19:30:13 INFO    LWP2512 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:30:13 INFO    LWP2512 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:30:13 INFO    LWP2512 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:30:13 INFO    LWP2512 [config.cpp:602 LogConfig] ...
+22.03.2024 19:30:13 INFO    LWP2512 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:30:20 ERROR   LWP2360 [config.cpp:440 LogConfig] Logger configuration YAML error. Detail: yaml-cpp: error at line 26, column 1: end of map not found. Config file: C:/User/SnifflyFox/PprotoTask/config/Terminal.logger.config
+22.03.2024 19:30:20 INFO    LWP2360 [config.cpp:470 LogConfig] ---
+22.03.2024 19:30:20 INFO    LWP2360 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:30:20 INFO    LWP2360 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:30:20 INFO    LWP2360 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:30:20 INFO    LWP2360 [config.cpp:602 LogConfig] ...
+22.03.2024 19:30:21 INFO    LWP2360 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:30:44 INFO    LWP8464 [config.cpp:470 LogConfig] ---
+22.03.2024 19:30:44 INFO    LWP8464 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:30:44 INFO    LWP8464 [config.cpp:503 LogConfig] Saver : name: application; active: true; level: INFO; max_line_size: 5000; filters: [jopa]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.jopa
+22.03.2024 19:30:44 INFO    LWP8464 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:30:44 INFO    LWP8464 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:30:44 INFO    LWP8464 [config.cpp:538 LogConfig] Filter : name: jopa; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Jopaplication]
+22.03.2024 19:30:44 INFO    LWP8464 [config.cpp:602 LogConfig] ...
+22.03.2024 19:30:44 INFO    LWP8464 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:34:04 INFO    LWP14348 [config.cpp:470 LogConfig] ---
+22.03.2024 19:34:04 INFO    LWP14348 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:34:04 INFO    LWP14348 [config.cpp:503 LogConfig] Saver : name: application; active: true; level: INFO; max_line_size: 5000; filters: [jopa]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.jopa
+22.03.2024 19:34:04 INFO    LWP14348 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:34:04 INFO    LWP14348 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:34:04 INFO    LWP14348 [config.cpp:538 LogConfig] Filter : name: jopa; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Jopaplication]
+22.03.2024 19:34:04 INFO    LWP14348 [config.cpp:602 LogConfig] ...
+22.03.2024 19:34:04 INFO    LWP14348 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:470 LogConfig] ---
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:503 LogConfig] Saver : name: applicationdebug; active: true; level: DEBUG; max_line_size: 5000; filters: [apld]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.appldebug
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:503 LogConfig] Saver : name: jopaplication; active: true; level: INFO; max_line_size: 5000; filters: [jopa]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.jopa
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:538 LogConfig] Filter : name: apld; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [ApplicationDebug]
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:538 LogConfig] Filter : name: jopa; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Jopaplication]
+22.03.2024 19:39:08 INFO    LWP15532 [config.cpp:602 LogConfig] ...
+22.03.2024 19:39:08 INFO    LWP15532 [main.cpp:53 Jopaplication] JOPKA
+22.03.2024 19:39:08 INFO    LWP15532 [main.cpp:55 Jopaplication] TVOJA JOPA Y NAS
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:470 LogConfig] ---
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:503 LogConfig] Saver : name: applicationdebug; active: true; level: DEBUG; max_line_size: 5000; filters: [apld]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.appldebug
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:503 LogConfig] Saver : name: jopaplication; active: true; level: INFO; max_line_size: 5000; filters: [jopa]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.jopa
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:538 LogConfig] Filter : name: apld; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [ApplicationDebug]
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:538 LogConfig] Filter : name: jopa; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Jopaplication]
+22.03.2024 19:46:24 INFO    LWP14548 [config.cpp:602 LogConfig] ...
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:470 LogConfig] ---
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:503 LogConfig] Saver : name: default; active: true; level: INFO; max_line_size: 5000; filters: [defualt]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:503 LogConfig] Saver : name: applicationdebug; active: true; level: DEBUG; max_line_size: 5000; filters: [apld]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.appldebug
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:503 LogConfig] Saver : name: jopaplication; active: true; level: INFO; max_line_size: 5000; filters: [jopa]; file: C:/User/SnifflyFox/PprotoTask/logs/Terminal.log.jopa
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:503 LogConfig] Saver : name: stdout; active: true; level: DEBUG2; max_line_size: 5000; filters: []
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:538 LogConfig] Filter : name: defualt; mode: exclude; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Application]
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:538 LogConfig] Filter : name: apld; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [ApplicationDebug]
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:538 LogConfig] Filter : name: jopa; mode: include; filtering_errors: false; follow_thread_context: false; type: module_name; filtering_noname_modules: false; modules: [Jopaplication]
+22.03.2024 19:50:49 INFO    LWP10392 [config.cpp:602 LogConfig] ...

@@ -23,22 +23,22 @@ class Application : public QCoreApplication
     Q_OBJECT
 private:
 
-    QUuidEx _idAppl;
-    QString _nameAppl;
+    QUuidEx _idAppl; //имя приложения
+    QString _nameAppl; //Я дегенарут тупой. это имя. ID выше
 
-    alog::atomic_bool _stop = {false};
-    FunctionInvoker _funcInvoker;
+    alog::atomic_bool _stop = {false}; //хз пока мирный атом
+    FunctionInvoker _funcInvoker; //хз пока
 
 public:
-    Application(int argc, char**argv);
+    Application(int argc, char**argv);//конструктор
 
-    bool init();
-    bool deInit();
+    bool init(); //хз пока
+    bool deInit(); //хз пока
 public slots:
-    void socketConnected(pproto::SocketDescriptor socketDescript);
-    void message(const pproto::Message::Ptr&);
+    void socketConnected(pproto::SocketDescriptor socketDescript);//хз пока
+    void message(const pproto::Message::Ptr&); //хз пока
 
-    void command_ServerInformation(const pproto::Message::Ptr&);
+    void command_ServerInformation(const pproto::Message::Ptr&);//хз пока
 };
 
 #endif // APPLICATION_H

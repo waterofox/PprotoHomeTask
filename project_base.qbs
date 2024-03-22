@@ -45,10 +45,10 @@ Project
 
         if (qbs.targetOS.contains("windows")
             && qbs.toolchain && qbs.toolchain.contains("mingw"))
-            def.push("CONFIG_DIR=\"AppData/PprotoTask/config\"");
+            def.push("CONFIG_DIR=\"C:/User/SnifflyFox/PprotoTask/config\"");
         else
             // def.push("CONFIG_DIR=\"/etc/projectExample\"");
-            def.push("CONFIG_DIR=\"~/AppData/PprotoTask/config\"");
+            def.push("CONFIG_DIR=\"C:/User/SnifflyFox/PprotoTask/config\"");
 
         return def;
     }

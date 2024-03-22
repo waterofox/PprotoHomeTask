@@ -1,5 +1,7 @@
 #include "application.h"
 
+#define log_debug_m alog::logger().debug (alog_line_location, "Application")
+
 Application::Application(int argc, char** argv) :
     QCoreApplication(argc, argv)
 {}
