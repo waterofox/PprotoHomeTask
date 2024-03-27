@@ -53,12 +53,24 @@ bool Application::deInit()
 
 void Application::socketConnected(SocketDescriptor socketDescript)
 {
-
+    log_info_m << "---ЕБАТЬ ПОДКЛЮЧЕНИЕ";
 }
 
-void Application::message(const Message::Ptr &)
+void Application::message(const Message::Ptr & m)
 {
+    log_info_m << "--- new message";
+    if (_stop)
+        return;
 
+    if (m->processed())
+        return;
+
+    if (lst::FindResult fr = _funcInvoker.findCommand(m->command()))
+    {
+        if (command::pool().commandIsSinglproc(m->command()))
+            m->markAsProcessed();
+        _funcInvoker.call(m, fr);
+    }
 }
 
 void Application::command_ServerInformation(const Message::Ptr &)
