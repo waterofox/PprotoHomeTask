@@ -28,6 +28,8 @@ extern const QUuidEx CtlDiscovery;
 */
 extern const QUuidEx ServerInformation;
 
+extern const QUuidEx SendJopaToClient;
+
 
 } // namespace command
 
@@ -67,6 +69,11 @@ struct ServerInformation : Data<&command::ServerInformation,
     // Адрес сервера
     QString address;
 
+    DECLARE_B_SERIALIZE_FUNC
+};
+struct SendJopaToClient : Data<&command::SendJopaToClient,Message::Type::Command,Message::Type::Answer>
+{
+    QString JopaMessage;
     DECLARE_B_SERIALIZE_FUNC
 };
 

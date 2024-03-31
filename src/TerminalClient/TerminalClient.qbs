@@ -20,6 +20,11 @@ Product
     cpp.systemIncludePaths: Qt.core.cpp.includePaths
 
     files:[
+        "application.cpp",
+        "application.h",
         "main.cpp",
+        "widgets/mainwindow.cpp",
+        "widgets/mainwindow.h",
+        "widgets/mainwindow.ui",
     ]
 }
