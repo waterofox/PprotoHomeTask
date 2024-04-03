@@ -73,7 +73,15 @@ void Application::message(const Message::Ptr & m)
     }
 }
 
-void Application::command_ServerInformation(const Message::Ptr &)
+void Application::command_ServerInformation(const Message::Ptr & message)
+{
+    if (message->type() == Message::Type::Command)
+    {
+        log_info_m << "server information";
+    }
+}
+
+void Application::command_SendJopaToClient(const Message::Ptr & m)
 {
 
 }
