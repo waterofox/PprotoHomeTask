@@ -38,7 +38,8 @@ public slots:
     void socketConnected(pproto::SocketDescriptor socketDescript);//хз пока
     void message(const pproto::Message::Ptr& m); //хз пока
 
-    void command_ServerInformation(const pproto::Message::Ptr&);//хз пока
+    void command_ServerInformation(const pproto::Message::Ptr& m);//обработчик команды ServerInformation
+    void command_SendJopaToClient (const pproto::Message::Ptr& m);
 };
 
 #endif // APPLICATION_H

@@ -23,6 +23,7 @@ int main(int argc, char* argv[])
     loadApplication();
     Application obj{argc,argv};
     obj.init();
+    QNetworkProxy::setApplicationProxy(QNetworkProxy::NoProxy);
     //настраиваем эту хуету
     chk_connect_q(&tcp::listener(),&tcp::Listener::socketConnected,
                   &obj,&Application::socketConnected);
