@@ -39,6 +39,7 @@ bool Application::init()
     _funcInvoker.registration(command:: COMMAND, &Application::command_##COMMAND, this);
 
     FUNC_REGISTRATION(ServerInformation)
+    FUNC_REGISTRATION(SendJopaToClient)
 
 #undef FUNC_REGISTRATION
 
@@ -53,7 +54,7 @@ bool Application::deInit()
 
 void Application::socketConnected(SocketDescriptor socketDescript)
 {
-    log_info_m << "---ЕБАТЬ ПОДКЛЮЧЕНИЕ";
+    log_info_m << "---ПОДКЛЮЧЕНИЕ";
 }
 
 void Application::message(const Message::Ptr & m)
@@ -81,7 +82,15 @@ void Application::command_ServerInformation(const Message::Ptr & message)
     }
 }
 
-void Application::command_SendJopaToClient(const Message::Ptr & m)
+void Application::command_SendJopaToClient(const Message::Ptr &m)
 {
-
+    if(m->type() == Message::Type::Command)
+    {
+        data::SendJopaToClient newData;
+        readFromMessage(m,newData);
+        newData.JopaMessage = "JOPA))))";
+        Message::Ptr answer = m->cloneForAnswer();
+        writeToMessage(newData,answer);
+        transport::tcp::listener().send(answer);
+    }
 }

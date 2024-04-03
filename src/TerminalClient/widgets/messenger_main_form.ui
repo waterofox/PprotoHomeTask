@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>messenger_main_form</class>
+ <widget class="QWidget" name="messenger_main_form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(95, 40, 59);</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="mainLayout" stretch="1,2">
+     <item>
+      <layout class="QVBoxLayout" name="infoLayout" stretch="1,1,1,100,0">
+       <item>
+        <widget class="QPushButton" name="ConnectionBut">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;MS Sans Serif&quot;;
+background-color: rgb(77, 34, 50);
+color: &quot;white&quot;</string>
+         </property>
+         <property name="text">
+          <string>Enter to net</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;MS Sans Serif&quot;;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;status on server:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;MS Serif&quot;;</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;offline&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="users"/>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>1000</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="catLayout">
+       <item>
+        <layout class="QHBoxLayout" name="redactor" stretch="5,1">
+         <item>
+          <widget class="QLineEdit" name="printer">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(59, 27, 38);
+color: &quot;white&quot;;
+border: 0px solid black</string>
+           </property>
+           <property name="placeholderText">
+            <string comment="print something..."/>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="sentBut">
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;MS Sans Serif&quot;;
+background-color: rgb(72, 32, 46);
+color: &quot;white&quot;</string>
+           </property>
+           <property name="text">
+            <string>sent</string>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(59, 27, 38);
+
+border: 0px solid balck</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

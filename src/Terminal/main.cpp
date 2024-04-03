@@ -23,10 +23,8 @@ int main(int argc, char* argv[])
     loadApplication();
     Application obj{argc,argv};
     obj.init();
-    //настраиваем эту хуету
-    chk_connect_q(&tcp::listener(),&tcp::Listener::socketConnected,
-                  &obj,&Application::socketConnected);
-
+    QNetworkProxy::setApplicationProxy(QNetworkProxy::NoProxy);
+    //настраиваем эту ******
     QHostAddress host{"0.0.0.0"};
     config::readHostAddress("listener.socket.address",host);
     int port{20102};
@@ -39,6 +37,8 @@ int main(int argc, char* argv[])
     }
     log_info_m << "---server is listening now on " << host << ':' << port;
 
+    chk_connect_q(&tcp::listener(),&tcp::Listener::socketConnected,
+                  &obj,&Application::socketConnected);
 
     obj.exec();
     return 0;

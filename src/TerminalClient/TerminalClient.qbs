@@ -12,7 +12,7 @@ Product
     Depends{name: "RapidJson"}
     Depends{name: "SharedLib"}
     Depends{name: "Yaml"}
-    Depends{ name: "Qt"; submodules: ["core","network","sql"]}
+    Depends{ name: "Qt"; submodules: ["core","network","sql","gui","widgets"]}
 
     cpp.defines: project.cppDefines
     cpp.cxxLanguageVersion: project.cxxLanguageVersion
@@ -23,8 +23,8 @@ Product
         "application.cpp",
         "application.h",
         "main.cpp",
-        "widgets/mainwindow.cpp",
-        "widgets/mainwindow.h",
-        "widgets/mainwindow.ui",
+        "widgets/messenger_main_form.cpp",
+        "widgets/messenger_main_form.h",
+        "widgets/messenger_main_form.ui",
     ]
 }
