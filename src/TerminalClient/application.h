@@ -41,6 +41,7 @@ public:
 public slots:
     void command_SendJopaToClient (const pproto::Message::Ptr& m);
     void command_ServerInformation(const pproto::Message::Ptr& m);
+    void command_NewMessageInChat(const pproto::Message::Ptr& m);
     void connectionToServer();
 };
 

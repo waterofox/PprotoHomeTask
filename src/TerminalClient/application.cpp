@@ -45,6 +45,7 @@ bool Application::init()
 
     FUNC_REGISTRATION(SendJopaToClient)
     FUNC_REGISTRATION(ServerInformation)
+    FUNC_REGISTRATION(NewMessageInChat)
 
 #undef FUNC_REGISTRATION
 

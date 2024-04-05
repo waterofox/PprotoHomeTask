@@ -30,6 +30,8 @@ extern const QUuidEx ServerInformation;
 
 extern const QUuidEx SendJopaToClient;
 
+extern const QUuidEx NewMessageInChat;
+
 
 } // namespace command
 
@@ -52,6 +54,14 @@ struct CtlDiscovery : Data<&command::CtlDiscovery,
     DECLARE_B_SERIALIZE_FUNC
 };
 
+struct NewMessageInChat : Data<&command::NewMessageInChat, Message::Type::Command,Message::Type::Answer>
+{
+    QString DataMessage ="";
+    QString DataUserName = "";
+    QString DataTime = "";
+
+    DECLARE_B_SERIALIZE_FUNC
+};
 struct ServerInformation : Data<&command::ServerInformation,
                                  Message::Type::Command,
                                  Message::Type::Answer>

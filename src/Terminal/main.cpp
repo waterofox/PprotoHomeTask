@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
     int port{20102};
     config::base().getValue("listener.socket.port",port);
 
-    if(!pproto::transport::tcp::Listener().init({host,port}))
+    if(!pproto::transport::tcp::listener().init({host,port}))
     {
         log_info_m << "---failed to start listener on " << host<<':' << port;
         return 1;

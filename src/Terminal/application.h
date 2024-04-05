@@ -40,6 +40,7 @@ public slots:
 
     void command_ServerInformation(const pproto::Message::Ptr&);//обработчик комманды ServerInformation
     void command_SendJopaToClient (const pproto::Message::Ptr&);//обработчик функцйии jopas
+    void command_NewMessageInChat(const pproto::Message::Ptr& m);
 };
 
 #endif // APPLICATION_H
