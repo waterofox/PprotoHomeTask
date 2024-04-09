@@ -24,6 +24,8 @@
 #include <QDateTime>
 
 #include <unistd.h>
+using namespace pproto;
+
 class Client : public QObject
 {
     Q_OBJECT
@@ -39,6 +41,7 @@ private:
 public slots:
     void startClinet_slot();
     void setUserName(const QString& userName);
+    void command_ServerInformation(const pproto::Message::Ptr& mes);
 };
 
 #endif // CLIENT_H

@@ -1,8 +1,17 @@
 #include "client.h"
 #define log_debug_m alog::logger().debug (alog_line_location, "ApplicationDebug")
 #define log_info_m  alog::logger().info  (alog_line_location,    "Jopaplication")
-Client::Client() {
+Client::Client()
+{
     _serverSocket = pproto::transport::tcp::Socket::Ptr {new pproto::transport::tcp::Socket()};
+
+    #define FUNC_REGISTRATION(COMMAND) \
+    _funcInvoker.registration(command:: COMMAND, &Client::command_##COMMAND, this);
+
+    FUNC_REGISTRATION(ServerInformation)
+
+    #undef FUNC_REGISTRATION
+
 }
 
 Client::~Client()
@@ -49,4 +58,9 @@ void Client::startClinet_slot()
 void Client::setUserName(const QString &userName)
 {
     this->userName = userName;
+}
+
+void Client::command_ServerInformation(const Message::Ptr& mes)
+{
+
 }
