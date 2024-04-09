@@ -2,7 +2,6 @@
 #define MESSENGER_MAIN_FORM_H
 
 #include <QWidget>
-
 namespace Ui {
 class messenger_main_form;
 }

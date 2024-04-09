@@ -58,7 +58,7 @@ struct NewMessageInChat : Data<&command::NewMessageInChat, Message::Type::Comman
 {
     QString DataMessage ="";
     QString DataUserName = "";
-    QString DataTime = "";
+    QDateTime DataTime;
 
     DECLARE_B_SERIALIZE_FUNC
 };

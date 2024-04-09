@@ -20,8 +20,8 @@ Product
     cpp.systemIncludePaths: Qt.core.cpp.includePaths
 
     files:[
-        "application.cpp",
-        "application.h",
+        "client.cpp",
+        "client.h",
         "main.cpp",
         "widgets/messenger_main_form.cpp",
         "widgets/messenger_main_form.h",

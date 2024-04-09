@@ -10,9 +10,10 @@
 #include "logger/config.h"
 #include "pproto/transport/tcp.h"
 #include "pproto/transport/local.h"
-#include "application.h"
-#include "widgets/messenger_main_form.h"
 
+#include "client.h"
+
+#include <QApplication>
 
 #define log_debug_m alog::logger().debug (alog_line_location, "ApplicationDebug")
 #define log_info_m  alog::logger().info  (alog_line_location,    "Jopaplication")
@@ -48,12 +49,10 @@ int main(int argc, char* argv[])
 
     log_debug_m << "--savers added";
 
-    Application obj(argc,argv);
-    obj.init();
-    // messenger_main_form view;
-    // log_debug_m << "created";
-    // view.show();
-    obj.connectionToServer();
+    QApplication obj(argc,argv);
+    Client* jopka = new Client;
+    jopka->startClinet_slot();
+
     return obj.exec();;
 }
 

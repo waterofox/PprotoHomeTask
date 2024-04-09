@@ -55,7 +55,7 @@ bool Application::deInit()
 
 void Application::socketConnected(SocketDescriptor socketDescript)
 {
-    log_info_m << "---ПОДКЛЮЧЕНИЕ";
+    log_info_m << "---NEW CONNECTION";
 }
 
 void Application::message(const Message::Ptr & m)
@@ -94,4 +94,9 @@ void Application::command_SendJopaToClient(const Message::Ptr &m)
         writeToMessage(newData,answer);
         transport::tcp::listener().send(answer);
     }
+}
+
+void Application::command_NewMessageInChat(const Message::Ptr &m)
+{
+
 }
