@@ -2,6 +2,7 @@
 #define MESSENGER_MAIN_FORM_H
 
 #include <QWidget>
+#include "../client.h"
 namespace Ui {
 class messenger_main_form;
 }
@@ -16,6 +17,10 @@ public:
 
 private:
     Ui::messenger_main_form *ui;
+
+    Client* clientObj = nullptr;
+public slots:
+    void setStatusView();
 };
 
 #endif // MESSENGER_MAIN_FORM_H

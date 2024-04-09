@@ -32,12 +32,13 @@
    <item>
     <layout class="QHBoxLayout" name="mainLayout" stretch="1,2">
      <item>
-      <layout class="QVBoxLayout" name="infoLayout" stretch="0,1,1,1,0,0,0">
+      <layout class="QVBoxLayout" name="infoLayout" stretch="0,1,0,0,0,0,0">
        <item>
-        <widget class="QLineEdit" name="lineEdit">
+        <widget class="QLineEdit" name="name">
          <property name="styleSheet">
           <string notr="true">background-color: rgb(59, 27, 38);
-border: 0px solid black;</string>
+border: 0px solid black;
+color:white;</string>
          </property>
         </widget>
        </item>
@@ -67,12 +68,14 @@ color: &quot;white&quot;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_2">
+        <widget class="QLabel" name="label_status">
          <property name="styleSheet">
-          <string notr="true">font: 9pt &quot;MS Serif&quot;;</string>
+          <string notr="true">font: 10pt &quot;MS Serif&quot;;
+color: rgb(255, 0, 0);
+align:center</string>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; color:#ff0000;&quot;&gt;offline&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;offline&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -83,6 +86,9 @@ color: &quot;white&quot;</string>
         <layout class="QHBoxLayout" name="errorsLayout">
          <item>
           <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
            <property name="text">
             <string>error: </string>
            </property>

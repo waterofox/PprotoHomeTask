@@ -10,6 +10,7 @@
 #include "logger/config.h"
 #include "pproto/transport/tcp.h"
 #include "pproto/transport/local.h"
+#include "widgets/messenger_main_form.h"
 
 #include "client.h"
 
@@ -50,8 +51,8 @@ int main(int argc, char* argv[])
     log_debug_m << "--savers added";
 
     QApplication obj(argc,argv);
-    Client* jopka = new Client;
-    jopka->startClinet_slot();
+    messenger_main_form* jopka = new messenger_main_form;
+    jopka->show();
 
     return obj.exec();;
 }

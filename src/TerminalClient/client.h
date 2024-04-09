@@ -42,6 +42,8 @@ public slots:
     void startClinet_slot();
     void setUserName(const QString& userName);
     void command_ServerInformation(const pproto::Message::Ptr& mes);
+signals:
+    void clientHasConnected();
 };
 
 #endif // CLIENT_H

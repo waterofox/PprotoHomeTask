@@ -53,11 +53,13 @@ void Client::startClinet_slot()
         _serverSocket->stop();
     }
     log_debug_m << "socket has connected to server";
+    emit this->clientHasConnected();
 }
 
 void Client::setUserName(const QString &userName)
 {
     this->userName = userName;
+    log_info_m << "--welcome to the chat! " + this->userName;
 }
 
 void Client::command_ServerInformation(const Message::Ptr& mes)
